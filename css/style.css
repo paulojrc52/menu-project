@@ -1,0 +1,118 @@
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    width: auto;
+}
+
+body {
+    width:100%;
+    background-image: url('/img/logo-devora.png');
+    background-color: #f0b039;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 60%;
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+}
+
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-width: 1072px;
+    width: 100%;
+    height: 50px;
+    background-color: black;
+    box-shadow: 0 0 15px black; 
+    padding: 0 20px;  
+    border-radius: 20px; 
+}
+
+
+.logo {
+    width: auto;
+    position: relative;
+    color: rgba(255, 255, 255, 0.8);
+    text-transform: lowercase;
+    font-size: 35px;
+    font-weight: bold;
+    letter-spacing: -3px;
+    text-transform: lowercase;
+}
+
+
+.logo span:first-child {
+    color: #f19f07;
+}
+
+
+.logo span:last-child {
+    font-size: 12px;
+    letter-spacing: normal;
+}
+
+
+.menu {
+    display: flex;
+    width: auto;
+}
+
+.menu li {
+    position: relative;
+    
+}
+
+
+.menu > li a {
+    padding: 17px;
+    color: white;
+    font-size: 14px;
+    display: block;
+    text-transform: uppercase;
+    
+}
+
+
+.menu > li:hover {
+    background: #f19f07;
+    transition: 0.2s;
+}
+
+.menu > li:hover > .submenu,
+.submenu > li:hover > .submenu {
+    display: block;
+}
+
+
+.submenu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background: #f19f07;
+    min-width: 110%;
+    
+}
+
+.submenu li:hover {
+    background: #946307;
+    transition: 0.5s;
+}
+
+.submenu li {
+    position: relative;
+}
+
+.submenu li .submenu {
+    top: 0;
+    left: 100%;
+    padding: 15px;
+}
